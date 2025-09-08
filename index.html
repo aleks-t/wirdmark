@@ -23,6 +23,13 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="WirdMark">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
          crossorigin="anonymous"></script>
@@ -612,6 +619,51 @@
         }
         
         /* Responsive */
+        @media (max-width: 1024px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+                gap: var(--space-4);
+            }
+            
+            .sidebar {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: var(--space-4) 0;
+                text-align: center;
+            }
+            
+            .header h1 {
+                font-size: var(--text-2xl);
+                margin-bottom: var(--space-2);
+            }
+            
+            .header p {
+                font-size: var(--text-sm);
+            }
+            
+            .canvas-wrapper {
+                max-width: 100%;
+                height: 300px;
+                margin: 0 auto var(--space-4) auto;
+            }
+            
+            .ad-space.banner {
+                min-height: 50px;
+            }
+            
+            .ad-space.large-rectangle {
+                min-height: 200px;
+            }
+            
+            .ad-space.rectangle {
+                min-height: 150px;
+            }
+        }
+        
         @media (max-width: 640px) {
             .container {
                 padding: var(--space-2);
@@ -619,10 +671,54 @@
             
             .controls-grid {
                 grid-template-columns: 1fr;
+                gap: var(--space-3);
             }
             
             .upload-zone {
-                padding: var(--space-6);
+                padding: var(--space-4);
+            }
+            
+            .upload-title {
+                font-size: var(--text-lg);
+            }
+            
+            .upload-description {
+                font-size: var(--text-sm);
+            }
+            
+            .canvas-wrapper {
+                height: 250px;
+            }
+            
+            .form-group {
+                gap: var(--space-1);
+            }
+            
+            .form-label {
+                font-size: var(--text-xs);
+            }
+            
+            .btn {
+                padding: var(--space-2) var(--space-4);
+                font-size: var(--text-sm);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: var(--text-xl);
+            }
+            
+            .canvas-wrapper {
+                height: 200px;
+            }
+            
+            .upload-zone {
+                padding: var(--space-3);
+            }
+            
+            .controls-panel {
+                padding: var(--space-3);
             }
         }
     </style>
@@ -633,9 +729,6 @@
         <header class="header">
             <h1>WirdMark</h1>
             <p>Professional watermark tool for image protection and copyright enforcement</p>
-            <button onclick="document.querySelector('.upload-zone').scrollIntoView({behavior: 'smooth'})">
-                Start Protecting Images
-            </button>
         </header>
         
         <!-- Top Banner Ad -->
