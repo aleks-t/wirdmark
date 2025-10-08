@@ -3,39 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WirdMark - Professional Watermark Tool | Image Protection</title>
-    <meta name="description" content="Professional watermark tool for adding copyright protection to images. Secure online watermarking with customizable text, opacity, and positioning options.">
+    <title>WirdMark - Professional Watermark Tool | Protect Your Images Online</title>
+    <meta name="description" content="Free online watermark tool for photographers, designers, and content creators. Add copyright protection to your images with our professional watermarking solution.">
     <meta name="keywords" content="watermark tool, image protection, copyright watermark, photo watermarking, digital watermark, image security">
     
-    <!-- Open Graph for social sharing -->
+    <!-- Open Graph -->
     <meta property="og:title" content="WirdMark - Professional Watermark Tool">
-    <meta property="og:description" content="Professional watermark tool for image copyright protection and digital asset security."
+    <meta property="og:description" content="Professional watermark tool for image copyright protection and digital asset security.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourusername.github.io/watermark">
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="WirdMark - Professional Watermark Tool">
-    <meta name="twitter:description" content="Professional watermark tool for image copyright protection and digital security.">
-    
-    <!-- SEO optimizations -->
+    <!-- SEO -->
     <link rel="canonical" href="https://yourusername.github.io/watermark">
     <meta name="robots" content="index, follow">
     <meta name="author" content="WirdMark">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="favicon.png">
     
-    <!-- Google AdSense -->
+    <!-- Google AdSense - ADD YOUR PUBLISHER ID HERE -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1879187647627929"
          crossorigin="anonymous"></script>
     
     <style>
-        /* Modern CSS Reset */
         * {
             margin: 0;
             padding: 0;
@@ -43,682 +32,488 @@
         }
         
         :root {
-            /* Color System */
-            --blue-50: #eff6ff;
-            --blue-500: #3b82f6;
-            --blue-600: #2563eb;
-            --blue-700: #1d4ed8;
-            
-            --gray-50: #f9fafb;
-            --gray-100: #f3f4f6;
-            --gray-200: #e5e7eb;
-            --gray-300: #d1d5db;
-            --gray-400: #9ca3af;
-            --gray-500: #6b7280;
-            --gray-600: #4b5563;
-            --gray-700: #374151;
-            --gray-800: #1f2937;
-            --gray-900: #111827;
-            
-            --green-500: #10b981;
-            --green-600: #059669;
-            --red-500: #ef4444;
-            
-            /* Semantic Colors */
-            --primary: var(--blue-600);
-            --primary-hover: var(--blue-700);
-            --success: var(--green-500);
-            --error: var(--red-500);
-            
-            --text-primary: var(--gray-900);
-            --text-secondary: var(--gray-600);
-            --text-muted: var(--gray-500);
-            
-            --bg-primary: #ffffff;
-            --bg-secondary: var(--gray-50);
-            --bg-accent: var(--blue-50);
-            
-            --border: var(--gray-200);
-            --border-focus: var(--blue-500);
-            
-            /* Spacing */
-            --space-2: 0.5rem;
-            --space-3: 0.75rem;
-            --space-4: 1rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            
-            /* Typography */
-            --text-sm: 0.875rem;
-            --text-base: 1rem;
-            --text-lg: 1.125rem;
-            --text-xl: 1.25rem;
-            --text-2xl: 1.5rem;
-            --text-3xl: 1.875rem;
-            --text-4xl: 2.25rem;
-            
-            /* Border Radius */
-            --rounded: 0.375rem;
-            --rounded-lg: 0.5rem;
-            --rounded-xl: 0.75rem;
-            --rounded-2xl: 1rem;
-            
-            /* Shadows */
-            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --primary: #000000;
+            --primary-hover: #1a1a1a;
+            --success: #000000;
+            --gray-50: #fafafa;
+            --gray-100: #f5f5f5;
+            --gray-200: #e5e5e5;
+            --gray-300: #d4d4d4;
+            --gray-600: #525252;
+            --gray-800: #262626;
+            --gray-900: #171717;
         }
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--bg-secondary);
-            min-height: 100vh;
+            color: var(--gray-900);
+            background: var(--gray-50);
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: var(--space-4);
+            padding: 2rem 1rem;
+        }
+        
+        @media (max-width: 968px) {
+            .container {
+                max-width: 100%;
+                padding: 1.5rem 1rem;
+            }
         }
         
         /* Header */
         .header {
+            background: white;
+            padding: 3rem 1rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             text-align: center;
-            padding: var(--space-6) var(--space-4);
-            background: var(--bg-primary);
-            border-radius: var(--rounded-xl);
-            margin-bottom: var(--space-4);
-            box-shadow: var(--shadow);
         }
         
         .header h1 {
-            font-size: var(--text-2xl);
-            font-weight: 700;
-            margin-bottom: var(--space-2);
-            background: linear-gradient(135deg, var(--primary), var(--blue-500));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 2.5rem;
+            color: var(--gray-900);
+            margin-bottom: 1rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
         
-        .header p {
-            font-size: var(--text-base);
-            color: var(--text-secondary);
-            margin-bottom: var(--space-3);
-            line-height: 1.4;
+        .header .subheading {
+            color: var(--gray-600);
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
         }
         
-        .header button {
-            background: var(--success);
-            color: white;
-            padding: var(--space-2) var(--space-4);
-            border: none;
-            border-radius: var(--rounded-lg);
-            font-size: var(--text-sm);
+        .header .cta-text {
+            color: var(--gray-800);
+            font-size: 1.1rem;
             font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
+            margin-bottom: 0.5rem;
         }
         
-        .header button:hover {
-            background: var(--green-600);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
+        /* Content Sections */
+        .content-section {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
-        /* Main Layout */
-        .main-layout {
+        .content-section h2 {
+            font-size: 1.75rem;
+            color: var(--gray-900);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid var(--primary);
+        }
+        
+        .content-section h3 {
+            font-size: 1.3rem;
+            color: var(--gray-800);
+            margin: 1.5rem 0 1rem 0;
+        }
+        
+        .content-section p {
+            margin-bottom: 1rem;
+            color: var(--gray-600);
+            line-height: 1.8;
+        }
+        
+        .content-section ul, .content-section ol {
+            margin: 1rem 0 1.5rem 2rem;
+            color: var(--gray-600);
+        }
+        
+        .content-section li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .feature-grid {
             display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--space-8);
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
         }
         
-        @media (min-width: 1024px) {
-            .main-layout {
-                grid-template-columns: 2fr 1fr;
-            }
-            
-            .main-layout.no-ads {
-                grid-template-columns: 1fr;
-            }
+        .feature-card {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
         }
         
-        .ads-hidden {
-            display: none !important;
+        .feature-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
         }
         
-        /* Upload Section */
-        .upload-section {
-            background: var(--bg-primary);
-            border-radius: var(--rounded-xl);
-            padding: var(--space-6);
-            box-shadow: var(--shadow);
-            margin-bottom: var(--space-4);
-            border: 1px solid var(--gray-100);
-        }
-        
-        .upload-section h2 {
-            font-size: var(--text-lg);
-            font-weight: 700;
-            margin-bottom: var(--space-4);
-            color: var(--text-primary);
+        /* Tool Section */
+        .tool-section {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .upload-zone {
             border: 2px dashed var(--gray-300);
-            border-radius: var(--rounded-xl);
-            padding: var(--space-8);
+            border-radius: 12px;
+            padding: 3rem;
             text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
             background: var(--gray-50);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .upload-zone::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.02), rgba(16, 185, 129, 0.02));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .upload-zone:hover::before {
-            opacity: 1;
-        }
-        
-        .upload-zone.replaced {
-            border: 2px solid var(--gray-200);
-            background: var(--bg-primary);
-            cursor: default;
-            padding: var(--space-4);
-        }
-        
-        .upload-zone.replaced::before {
-            display: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
         
         .upload-zone:hover {
             border-color: var(--primary);
-            background: var(--bg-accent);
-            transform: translateY(-2px);
+            background: #eff6ff;
         }
         
-        .upload-zone.dragover {
-            border-color: var(--primary);
-            background: var(--bg-accent);
-            border-style: solid;
-        }
-        
-        .upload-icon {
-            font-size: 2.5rem;
-            margin-bottom: var(--space-2);
-            display: block;
-        }
-        
-        .upload-title {
-            font-size: var(--text-xl);
-            font-weight: 700;
-            margin-bottom: var(--space-2);
-            color: var(--text-primary);
-            line-height: 1.2;
-        }
-        
-        .upload-description {
-            color: var(--text-secondary);
-            margin-bottom: var(--space-4);
-            font-size: var(--text-base);
-            line-height: 1.4;
-        }
-        
-        .file-input {
-            display: none;
+        .upload-zone.replaced {
+            padding: 1rem;
+            border: 2px solid var(--gray-200);
         }
         
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            padding: var(--space-3) var(--space-6);
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            background: var(--primary);
+            color: white;
             border: none;
-            border-radius: var(--rounded-lg);
-            font-size: var(--text-base);
+            border-radius: 8px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            text-decoration: none;
         }
         
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-        }
-        
-        .btn-primary:hover {
+        .btn:hover {
             background: var(--primary-hover);
             transform: translateY(-1px);
         }
         
         .btn-success {
-            background: linear-gradient(135deg, var(--success), var(--green-600));
-            color: white;
-            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-            font-size: var(--text-lg);
-            padding: var(--space-4) var(--space-8);
-            margin-top: var(--space-6);
+            background: var(--success);
         }
         
-        .btn-success:hover {
-            background: linear-gradient(135deg, var(--green-600), #047857);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+        .canvas-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0;
+            position: relative;
         }
         
-        /* Controls Panel */
+        #canvas {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
         .controls-panel {
-            background: var(--bg-primary);
-            border-radius: var(--rounded-xl);
-            padding: var(--space-6);
-            box-shadow: var(--shadow);
-            margin-bottom: var(--space-4);
-            border: 1px solid var(--gray-100);
-        }
-        
-        .controls-title {
-            font-size: var(--text-lg);
-            font-weight: 700;
-            margin-bottom: var(--space-4);
-            color: var(--text-primary);
+            background: white;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .controls-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-4);
-            margin-top: 0;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
         }
         
-        @media (max-width: 768px) {
-            .controls-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-2);
-            padding: 0;
-            background: transparent;
-            border: none;
-            transition: none;
-        }
-        
-        .form-group:hover {
-            border: none;
-            box-shadow: none;
-        }
-        
-        .form-label {
-            font-size: var(--text-sm);
+        .form-group label {
+            display: block;
             font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: var(--text-secondary);
-            margin-bottom: var(--space-2);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+            color: var(--gray-700);
         }
         
         .form-control {
-            padding: var(--space-3);
+            width: 100%;
+            padding: 0.75rem;
             border: 1px solid var(--gray-300);
-            border-radius: var(--rounded-lg);
-            font-size: var(--text-base);
-            background: var(--bg-primary);
-            transition: all 0.2s ease;
-            font-weight: 400;
+            border-radius: 6px;
+            font-size: 1rem;
         }
         
         .form-control:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
         }
         
-        .form-control[type="text"] {
-            padding: var(--space-3) var(--space-4);
-            font-size: var(--text-base);
-        }
-        
-        .form-control[type="range"] {
-            -webkit-appearance: none;
-            appearance: none;
-            height: 6px;
-            background: var(--gray-200);
-            border-radius: 3px;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            margin: var(--space-2) 0;
-        }
-        
-        .form-control[type="range"]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background: var(--primary);
-            cursor: pointer;
-            border: none;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            transition: all 0.2s ease;
-        }
-        
-        .form-control[type="range"]::-webkit-slider-thumb:hover {
-            transform: scale(1.15);
-            box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
-        }
-        
-        .form-control[type="range"]::-moz-range-thumb {
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            background: var(--primary);
-            cursor: pointer;
-            border: none;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        
-        .form-control[type="color"] {
-            padding: 0;
-            cursor: pointer;
-            height: 40px;
-            width: 80px;
-            border-radius: var(--rounded-lg);
-            border: 2px solid var(--gray-200);
-            overflow: hidden;
-        }
-        
-        .value-badge {
-            background: var(--primary);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            min-width: 50px;
-            text-align: center;
-            font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
-        }
-        
-        .form-help {
-            font-size: var(--text-sm);
-            color: var(--text-muted);
-            font-style: italic;
-            margin-top: var(--space-2);
-        }
-        
-        /* Preview Section */
-        .preview-section {
-            background: var(--bg-primary);
-            border-radius: var(--rounded-2xl);
-            padding: var(--space-8);
-            box-shadow: var(--shadow);
-            text-align: center;
-        }
-        
-        .preview-title {
-            font-size: var(--text-xl);
-            font-weight: 700;
-            margin-bottom: var(--space-6);
-        }
-        
-        .canvas-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            max-width: 600px;
-            height: 400px;
-            margin: 0 auto var(--space-4) auto;
-            background: transparent;
-            border: none;
-            box-shadow: none;
-            position: relative;
-        }
-        
-        #canvas {
-            border-radius: var(--rounded-lg);
-            box-shadow: var(--shadow-lg);
-            background: white;
-        }
-        
-        .remove-image-btn {
+        .remove-btn {
             position: absolute;
-            top: var(--space-2);
-            right: var(--space-2);
-            background: rgba(239, 68, 68, 0.9);
+            top: 10px;
+            right: 10px;
+            background: #ef4444;
             color: white;
             border: none;
             border-radius: 50%;
             width: 32px;
             height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-size: 20px;
             cursor: pointer;
-            font-size: 18px;
-            font-weight: bold;
             z-index: 10;
-            transition: all 0.2s ease;
-            box-shadow: var(--shadow);
         }
         
-        .remove-image-btn:hover {
-            background: rgba(220, 38, 38, 1);
-            transform: scale(1.1);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        /* Sidebar */
-        .sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-6);
-        }
-        
-        .ad-space {
-            background: var(--bg-primary);
-            border: 2px solid var(--border);
-            border-radius: var(--rounded-xl);
-            padding: var(--space-4);
-            text-align: center;
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            margin-bottom: var(--space-6);
-        }
-        
-        .ad-space.rectangle {
-            min-height: 250px; /* 300x250 Medium Rectangle */
-        }
-        
-        .ad-space.large-rectangle {
-            min-height: 336px; /* 336x280 Large Rectangle */
-        }
-        
-        .ad-space.banner {
-            min-height: 60px; /* 728x90 Leaderboard - compact */
-        }
-        
-        .ad-space.mobile-banner {
-            min-height: 50px; /* 320x50 Mobile Banner */
-        }
-        
-        .ad-space::before {
-            content: 'Advertisement';
-            position: absolute;
-            top: var(--space-2);
-            right: var(--space-2);
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            background: var(--gray-100);
-            padding: 2px var(--space-2);
-            border-radius: var(--rounded);
-        }
-        
-        /* Messages */
-        .alert {
-            padding: var(--space-4);
-            border-radius: var(--rounded-lg);
-            margin-bottom: var(--space-4);
-            font-weight: 500;
-        }
-        
-        .alert-error {
-            background: #fef2f2;
-            color: #dc2626;
-            border: 1px solid #fecaca;
-        }
-        
-        .alert-success {
-            background: #f0fdf4;
-            color: #16a34a;
-            border: 1px solid #bbf7d0;
-        }
-        
-        /* Utilities */
         .hidden {
             display: none !important;
         }
         
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-        
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .main-layout {
-                grid-template-columns: 1fr;
-                gap: var(--space-4);
-            }
-            
-            .sidebar {
-                order: -1;
-            }
+        /* Ad Spaces */
+        .ad-space {
+            background: var(--gray-100);
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 2rem auto;
+            min-height: 250px;
+            max-width: 728px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray-600);
         }
         
         @media (max-width: 768px) {
-            .header {
-                padding: var(--space-4) 0;
-                text-align: center;
-            }
-            
-            .header h1 {
-                font-size: var(--text-2xl);
-                margin-bottom: var(--space-2);
-            }
-            
-            .header p {
-                font-size: var(--text-sm);
-            }
-            
-            .canvas-wrapper {
-                max-width: 100%;
-                height: 300px;
-                margin: 0 auto var(--space-4) auto;
-            }
-            
-            .ad-space.banner {
-                min-height: 50px;
-            }
-            
-            .ad-space.large-rectangle {
-                min-height: 200px;
-            }
-            
-            .ad-space.rectangle {
+            .ad-space {
                 min-height: 150px;
+                max-width: 100%;
             }
         }
         
-        @media (max-width: 640px) {
-            .container {
-                padding: var(--space-2);
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: var(--gray-900);
+            font-size: 1.1rem;
+            padding: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            transition: background 0.2s;
+            user-select: none;
+        }
+        
+        .faq-question:hover {
+            background: var(--gray-50);
+        }
+        
+        .faq-question::after {
+            content: '▼';
+            font-size: 0.8rem;
+            transition: transform 0.3s;
+            color: var(--gray-600);
+        }
+        
+        .faq-question.active::after {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            color: var(--gray-600);
+            line-height: 1.7;
+            padding: 0 1.25rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 0 1.25rem 1.25rem 1.25rem;
+        }
+        
+        .collapsible-section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+        
+        .collapsible-header {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            border-bottom: 1px solid var(--gray-200);
+            transition: background 0.2s;
+            user-select: none;
+        }
+        
+        .collapsible-header:hover {
+            background: var(--gray-50);
+        }
+        
+        .collapsible-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        
+        .collapsible-arrow {
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+            color: var(--gray-600);
+        }
+        
+        .collapsible-arrow.active {
+            transform: rotate(180deg);
+        }
+        
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .collapsible-content.active {
+            max-height: 2000px;
+        }
+        
+        .collapsible-content-inner {
+            padding: 1.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content-section {
+                padding: 1.5rem;
+            }
+            
+            .header {
+                padding: 1.5rem 1rem;
+            }
+            
+            .header h1 {
+                font-size: 1.75rem;
+            }
+            
+            .header .subheading {
+                font-size: 1.1rem;
+            }
+            
+            .header .cta-text {
+                font-size: 1rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
             }
             
             .controls-grid {
                 grid-template-columns: 1fr;
-                gap: var(--space-3);
             }
             
             .upload-zone {
-                padding: var(--space-4);
+                padding: 2rem 1rem;
             }
             
-            .upload-title {
-                font-size: var(--text-lg);
+            .tool-section {
+                padding: 1.5rem;
             }
             
-            .upload-description {
-                font-size: var(--text-sm);
+            .controls-panel {
+                padding: 1.5rem;
             }
             
-            .canvas-wrapper {
-                height: 250px;
+            .collapsible-header h2 {
+                font-size: 1.25rem;
             }
             
-            .form-group {
-                gap: var(--space-1);
+            .collapsible-content-inner {
+                padding: 1rem;
             }
             
-            .form-label {
-                font-size: var(--text-xs);
-            }
-            
-            .btn {
-                padding: var(--space-2) var(--space-4);
-                font-size: var(--text-sm);
+            canvas {
+                max-width: 100%;
+                height: auto;
             }
         }
         
         @media (max-width: 480px) {
+            .container {
+                padding: 1rem 0.75rem;
+            }
+            
             .header h1 {
-                font-size: var(--text-xl);
+                font-size: 1.5rem;
             }
             
-            .canvas-wrapper {
-                height: 200px;
+            .header .subheading {
+                font-size: 1rem;
             }
             
-            .upload-zone {
-                padding: var(--space-3);
+            .header .cta-text {
+                font-size: 0.9rem;
+            }
+            
+            .header p {
+                font-size: 0.9rem;
+            }
+            
+            .content-section {
+                padding: 1.25rem;
+            }
+            
+            .tool-section {
+                padding: 1.25rem;
             }
             
             .controls-panel {
-                padding: var(--space-3);
+                padding: 1.25rem;
+            }
+            
+            .upload-zone {
+                padding: 1.5rem 1rem;
+            }
+            
+            .btn {
+                padding: 0.65rem 1.5rem;
+                font-size: 0.95rem;
+            }
+            
+            .collapsible-header {
+                padding: 1.25rem;
+            }
+            
+            .collapsible-header h2 {
+                font-size: 1.1rem;
+            }
+            
+            .faq-question {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+            
+            .form-control {
+                padding: 0.65rem;
             }
         }
     </style>
@@ -727,189 +522,220 @@
     <div class="container">
         <!-- Header -->
         <header class="header">
-            <h1>WirdMark</h1>
-            <p>Professional watermark tool for image protection and copyright enforcement</p>
+            <h1>🛡️ WirdMark - Professional Watermark Tool</h1>
+            <p>Protect your digital assets with professional watermarking - Free, secure, and easy to use</p>
         </header>
-        
-        <!-- Top Banner Ad -->
-        <div class="ad-space banner" style="margin-bottom: var(--space-4);">
-            <ins class="adsbygoogle"
-                 style="display:block; width:728px; height:90px;"
-                 data-ad-client="ca-pub-XXXXXXXXXX"
-                 data-ad-slot="4444444444"
-                 data-ad-format="banner"></ins>
-            <div>Leaderboard Banner (728×90)</div>
-        </div>
 
-        <div class="main-layout">
-            <!-- Main Content -->
-            <main>
-                <!-- Messages -->
-                <div class="alert alert-error hidden" id="errorMessage" role="alert"></div>
-                <div class="alert alert-success hidden" id="successMessage" role="alert"></div>
-                
-                <!-- Upload Section -->
-                <section class="upload-section">
-                    <h2>Step 1: Upload Your Image</h2>
-                    <div class="upload-zone" id="uploadZone" tabindex="0" role="button">
-                        <div id="uploadContent">
-                            <span class="upload-icon">+</span>
-                            <h3 class="upload-title">Upload Your Image</h3>
-                            <p class="upload-description">Select an image file to add watermark protection</p>
-                            
-                            <input type="file" id="fileInput" class="file-input" accept="image/*">
-                            
-                            <button type="button" class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
-                                Choose File
-                            </button>
-                            
-                            <div style="margin-top: var(--space-4); font-size: var(--text-sm); color: var(--text-muted);">
-                                JPG, PNG, WebP, GIF supported • Max 10MB • Secure processing
-                            </div>
-                        </div>
-
-                        <div class="canvas-wrapper hidden" id="canvasWrapper">
-                            <button type="button" class="remove-image-btn hidden" id="removeImageBtn" title="Remove image and upload new one">
-                                ×
-                            </button>
-                            <canvas id="canvas"></canvas>
-                        </div>
-                        <button type="button" class="btn btn-success hidden" id="downloadBtn" disabled>
-                            Download Image
-                        </button>
-                    </div>
-                </section>
-                
-                
-                <!-- Controls -->
-                <section class="controls-panel hidden" id="controlsPanel">
-                    <h2 class="controls-title">Step 2: Customize Watermark Settings</h2>
-                    <div class="controls-grid">
-                        <div class="form-group">
-                            <label for="watermarkText" class="form-label">Watermark Text</label>
-                            <input type="text" id="watermarkText" class="form-control" value="© PROTECTED" maxlength="50">
-                            <div class="form-help">Enter text to display as watermark</div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="fontSize" class="form-label">
-                                Size
-                                <span class="value-badge" id="fontSizeValue">24px</span>
-                            </label>
-                            <input type="range" id="fontSize" class="form-control" min="10" max="100" value="24">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="opacity" class="form-label">
-                                Opacity
-                                <span class="value-badge" id="opacityValue">30%</span>
-                            </label>
-                            <input type="range" id="opacity" class="form-control" min="10" max="100" step="10" value="30">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="angle" class="form-label">
-                                Rotation
-                                <span class="value-badge" id="angleValue">-15°</span>
-                            </label>
-                            <input type="range" id="angle" class="form-control" min="-45" max="45" value="-15">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="color" class="form-label">Color</label>
-                            <input type="color" id="color" class="form-control" value="#ffffff">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="spacing" class="form-label">
-                                Spacing
-                                <span class="value-badge" id="spacingValue">120px</span>
-                            </label>
-                            <input type="range" id="spacing" class="form-control" min="50" max="300" value="120">
-                        </div>
-                        
-                    </div>
-                </section>
-            </main>
+        <!-- Introduction Content -->
+        <section class="content-section">
+            <h2>Professional Image Protection Made Simple</h2>
+            <p>Whether you're a photographer, designer, or content creator, protecting your digital work is essential. Add professional watermarks to your images instantly with our free online tool - no software installation required.</p>
             
-            <!-- Sidebar -->
-            <aside class="sidebar">
-                <!-- Ad Space 1: Large Rectangle (High Value) -->
-                <div class="ad-space large-rectangle">
-                    <ins class="adsbygoogle"
-                         style="display:block; width:336px; height:280px;"
-                         data-ad-client="ca-pub-XXXXXXXXXX"
-                         data-ad-slot="1111111111"
-                         data-ad-format="rectangle"></ins>
-                    <div>Large Rectangle (336×280)</div>
-                </div>
-                
-                <!-- Ad Space 2: Medium Rectangle -->
-                <div class="ad-space rectangle">
-                    <ins class="adsbygoogle"
-                         style="display:block; width:300px; height:250px;"
-                         data-ad-client="ca-pub-XXXXXXXXXX"
-                         data-ad-slot="2222222222"
-                         data-ad-format="rectangle"></ins>
-                    <div>Medium Rectangle (300×250)</div>
-                </div>
-                
-                <!-- Ad Space 3: Square -->
-                <div class="ad-space rectangle">
-                    <ins class="adsbygoogle"
-                         style="display:block; width:250px; height:250px;"
-                         data-ad-client="ca-pub-XXXXXXXXXX"
-                         data-ad-slot="3333333333"
-                         data-ad-format="rectangle"></ins>
-                    <div>Square (250×250)</div>
-                </div>
-            </aside>
-        </div>
-        
-        <!-- Bottom Banner Ad -->
-        <div class="ad-space banner" style="margin-top: var(--space-4);">
+            <p>Your images are processed entirely in your browser for complete privacy and security. We never upload, store, or access your files.</p>
+        </section>
+
+        <!-- Ad Space 1 -->
+        <div class="ad-space">
             <ins class="adsbygoogle"
-                 style="display:block; width:728px; height:90px;"
+                 style="display:block"
                  data-ad-client="ca-pub-XXXXXXXXXX"
-                 data-ad-slot="5555555555"
-                 data-ad-format="banner"></ins>
-            <div>Bottom Leaderboard Banner (728×90)</div>
+                 data-ad-slot="1111111111"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            Advertisement
         </div>
+
+        <!-- Free Tool Section -->
+        <section class="tool-section">
+            <h2 style="text-align: center; margin-bottom: 0.5rem;">Start Protecting Your Images Now</h2>
+            <p style="margin-bottom: 2rem; color: var(--gray-600); text-align: center;">Upload your image below - it takes less than 30 seconds</p>
+            
+            <div class="upload-zone" id="uploadZone">
+                <div id="uploadContent">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📸</div>
+                    <h3>Upload Your Image</h3>
+                    <p style="color: var(--gray-600); margin: 1rem 0;">Drag and drop or click to select</p>
+                    <input type="file" id="fileInput" class="hidden" accept="image/*">
+                    <button type="button" class="btn" onclick="document.getElementById('fileInput').click()">
+                        Choose Image
+                    </button>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray-600);">
+                        Supports JPG, PNG, WebP • Max 10MB • 100% Client-Side Processing
+                    </p>
+                </div>
+                
+                <div class="canvas-wrapper hidden" id="canvasWrapper">
+                    <button type="button" class="remove-btn hidden" id="removeBtn">×</button>
+                    <canvas id="canvas"></canvas>
+                </div>
+                
+                <button type="button" class="btn btn-success hidden" id="downloadBtn" style="margin-top: 1.5rem;">
+                    💾 Download Watermarked Image
+                </button>
+            </div>
+        </section>
+
+        <!-- Controls -->
+        <section class="controls-panel hidden" id="controlsPanel">
+            <h2>⚙️ Customize Your Watermark</h2>
+            <div class="controls-grid">
+                <div class="form-group">
+                    <label for="watermarkText">Watermark Text</label>
+                    <input type="text" id="watermarkText" class="form-control" value="© PROTECTED" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="fontSize">Font Size: <span id="fontSizeValue">24px</span></label>
+                    <input type="range" id="fontSize" class="form-control" min="10" max="100" value="24">
+                </div>
+                <div class="form-group">
+                    <label for="opacity">Opacity: <span id="opacityValue">30%</span></label>
+                    <input type="range" id="opacity" class="form-control" min="10" max="100" step="10" value="30">
+                </div>
+                <div class="form-group">
+                    <label for="angle">Rotation: <span id="angleValue">-15°</span></label>
+                    <input type="range" id="angle" class="form-control" min="-45" max="45" value="-15">
+                </div>
+                <div class="form-group">
+                    <label for="color">Color</label>
+                    <input type="color" id="color" class="form-control" value="#ffffff">
+                </div>
+                <div class="form-group">
+                    <label for="spacing">Spacing: <span id="spacingValue">120px</span></label>
+                    <input type="range" id="spacing" class="form-control" min="50" max="300" value="120">
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <div class="collapsible-section">
+            <div class="collapsible-header" onclick="toggleSection(this)">
+                <h2>How to Use WirdMark - Step by Step Guide</h2>
+                <span class="collapsible-arrow">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="collapsible-content-inner">
+                    <h3>Step 1: Upload Your Image</h3>
+                    <p>Click the upload area above or drag and drop your image file. We support all major image formats including JPG, PNG, and WebP. Your images are processed entirely in your browser - nothing is uploaded to our servers, ensuring complete privacy and security.</p>
+                    
+                    <h3>Step 2: Customize Your Watermark</h3>
+                    <p>Once your image is loaded, use our intuitive controls to customize your watermark:</p>
+                    <ul>
+                        <li><strong>Text:</strong> Enter your copyright notice, brand name, or any text you want to display</li>
+                        <li><strong>Size:</strong> Adjust the font size from subtle to prominent (10-100px)</li>
+                        <li><strong>Opacity:</strong> Control transparency from 10% (barely visible) to 100% (solid)</li>
+                        <li><strong>Rotation:</strong> Angle your watermark from -45° to 45° for diagonal placement</li>
+                        <li><strong>Color:</strong> Choose any color to match your brand or ensure visibility</li>
+                        <li><strong>Spacing:</strong> Set the distance between repeated watermarks (50-300px)</li>
+                    </ul>
+                    
+                    <h3>Step 3: Download Your Protected Image</h3>
+                    <p>Once satisfied with your watermark, simply click the download button. Your watermarked image will be saved as a high-quality PNG file, ready to share online or use in your projects.</p>
+                    
+                    <h3>Privacy & Security</h3>
+                    <p>WirdMark processes all images directly in your web browser using HTML5 Canvas technology. This means your images never leave your device - there's no server upload, no data collection, and complete privacy. We don't store, analyze, or have any access to your images whatsoever.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Space 2 -->
+        <div class="ad-space">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXX"
+                 data-ad-slot="2222222222"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            Advertisement
+        </div>
+
+        <!-- Best Practices -->
+        <div class="collapsible-section">
+            <div class="collapsible-header" onclick="toggleSection(this)">
+                <h2>Tips for Effective Watermarking</h2>
+                <span class="collapsible-arrow">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="collapsible-content-inner">
+                    <h3>Opacity Settings</h3>
+                    <p>For most images, 20-40% opacity works best. This keeps your watermark visible while maintaining the image's aesthetic appeal. Higher opacity (50-70%) offers stronger protection but may be more distracting.</p>
+                    
+                    <h3>Size Guidelines</h3>
+                    <p>Your watermark should be readable but not dominating. Aim for 5-15% of the total image area. For high-resolution images, use larger font sizes (40-60px).</p>
+                    
+                    <h3>Color Selection</h3>
+                    <p>White watermarks work best on dark images, while dark watermarks suit lighter backgrounds. For versatility, white text at 30-40% opacity works across most images.</p>
+                    
+                    <h3>Consistent Branding</h3>
+                    <p>Use the same watermark style across all your images to build brand recognition. Include your copyright symbol (©), year, and name or business identifier.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="collapsible-section">
+            <div class="collapsible-header" onclick="toggleSection(this)">
+                <h2>Frequently Asked Questions</h2>
+                <span class="collapsible-arrow">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="collapsible-content-inner">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">Is this tool completely free?</div>
+                        <div class="faq-answer">Yes, WirdMark is 100% free with no limitations. Watermark unlimited images without any costs or subscriptions.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">Are my images stored on your servers?</div>
+                        <div class="faq-answer">No. All processing happens in your browser. Your images never leave your device and we have zero access to them.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">What image formats do you support?</div>
+                        <div class="faq-answer">We support JPG, PNG, WebP, and GIF files up to 10MB. Output is saved as high-quality PNG.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">Can I use this for commercial projects?</div>
+                        <div class="faq-answer">Yes! Use WirdMark for any purpose - personal, commercial, client work, or business projects.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legal Information -->
+        <section class="content-section">
+            <h2>Privacy & Security</h2>
+            
+            <p>WirdMark processes all images directly in your web browser using HTML5 Canvas technology. This means your images never leave your device - there's no server upload, no data collection, and complete privacy. We don't store, analyze, or have any access to your images.</p>
+            
+            <p>All watermarking happens client-side in real-time. Your original files remain on your computer, and only you have access to the watermarked versions you download.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: 2rem; color: var(--gray-600); margin-top: 3rem;">
+            <p>&copy; 2025 WirdMark. All rights reserved. | <a href="#" style="color: var(--primary);">Privacy Policy</a> | <a href="#" style="color: var(--primary);">Terms of Service</a></p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Professional watermarking made simple and secure</p>
+        </footer>
     </div>
 
     <script>
-        'use strict';
-        
         // Configuration
         const MAX_FILE_SIZE = 10 * 1024 * 1024;
         const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp', 'image/gif'];
-        const MAX_CANVAS_SIZE = 4096;
-        const PREVIEW_MAX_WIDTH = 580; // Fixed preview size for consistent UI
-        const PREVIEW_MAX_HEIGHT = 380;
-        
-        // AdSense Configuration - CHANGE THIS TO YOUR PUBLISHER ID
-        const ADSENSE_PUBLISHER_ID = 'ca-pub-XXXXXXXXXX'; // Replace with your actual ID
-        const SHOW_ADS = ADSENSE_PUBLISHER_ID !== 'ca-pub-XXXXXXXXXX'; // Only show ads if real ID is set
         
         // DOM Elements
         const fileInput = document.getElementById('fileInput');
         const uploadZone = document.getElementById('uploadZone');
-        const controlsPanel = document.getElementById('controlsPanel');
-        const previewSection = null; // removed separate preview section
         const canvas = document.getElementById('canvas');
         const canvasWrapper = document.getElementById('canvasWrapper');
         const uploadContent = document.getElementById('uploadContent');
         const ctx = canvas.getContext('2d');
         const downloadBtn = document.getElementById('downloadBtn');
-        const removeImageBtn = document.getElementById('removeImageBtn');
-        const errorMessage = document.getElementById('errorMessage');
-        const successMessage = document.getElementById('successMessage');
+        const removeBtn = document.getElementById('removeBtn');
+        const controlsPanel = document.getElementById('controlsPanel');
         
-        // State
         let originalImage = null;
-        let isProcessing = false;
         let watermarkTimeout = null;
-        let displayScale = 1; // Scale factor for preview vs original
         
         // Controls
         const controls = {
@@ -921,459 +747,189 @@
             spacing: document.getElementById('spacing')
         };
         
-        const valueDisplays = {
-            fontSize: document.getElementById('fontSizeValue'),
-            opacity: document.getElementById('opacityValue'),
-            angle: document.getElementById('angleValue'),
-            spacing: document.getElementById('spacingValue')
-        };
-        
-        // Initialize
-        function hideMessages() {
-            errorMessage.classList.add('hidden');
-            successMessage.classList.add('hidden');
-        }
-        
-        // Initialize app
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', init);
-        } else {
-            init();
-        }
-        
-        // Initialize ads conditionally
-        function initializeAds() {
-            if (SHOW_ADS) {
-                // Update all ad units with real publisher ID
-                document.querySelectorAll('.adsbygoogle').forEach(ad => {
-                    ad.setAttribute('data-ad-client', ADSENSE_PUBLISHER_ID);
-                });
-                
-                // Initialize AdSense - Push for each ad unit
-                (adsbygoogle = window.adsbygoogle || []).push({}); // Top Banner
-                (adsbygoogle = window.adsbygoogle || []).push({}); // Large Rectangle
-                (adsbygoogle = window.adsbygoogle || []).push({}); // Medium Rectangle
-                (adsbygoogle = window.adsbygoogle || []).push({}); // Square
-                (adsbygoogle = window.adsbygoogle || []).push({}); // Bottom Banner
-            } else {
-                // Hide all ad spaces and make layout full-width
-                document.querySelectorAll('.ad-space').forEach(ad => {
-                    ad.classList.add('ads-hidden');
-                });
-                document.querySelector('.sidebar')?.classList.add('ads-hidden');
-                document.querySelector('.main-layout')?.classList.add('no-ads');
-            }
-        }
-        
-        // Initialize ads after DOM is ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initializeAds);
-        } else {
-            initializeAds();
-        }
-        
-        function setupEventListeners() {
-            // File input
-            fileInput.addEventListener('change', handleFileSelect);
-            
-            // Upload zone
-            uploadZone.addEventListener('click', () => {
-                if (isProcessing) return;
-                if (uploadZone.classList.contains('replaced')) return; // prevent re-open after preview
-                fileInput.click();
-            });
-            uploadZone.addEventListener('dragover', handleDragOver);
-            uploadZone.addEventListener('dragleave', handleDragLeave);
-            uploadZone.addEventListener('drop', handleDrop);
-            
-            // Controls
-            Object.keys(controls).forEach(key => {
-                const control = controls[key];
-                if (control) {
-                    control.addEventListener('input', () => {
-                        console.log(`Control ${key} changed to:`, control.value);
-                        updateValueDisplays();
-                        debounceWatermark();
-                    });
-                    // Also listen for 'change' event for better compatibility
-                    control.addEventListener('change', () => {
-                        console.log(`Control ${key} changed (change event) to:`, control.value);
-                        updateValueDisplays();
-                        debounceWatermark();
-                    });
-                }
-            });
-            
-            // Download
-            downloadBtn.addEventListener('click', downloadImage);
-            
-            // Remove image
-            removeImageBtn.addEventListener('click', resetToUploadState);
-            
-            // Prevent default drag on body
-            document.body.addEventListener('dragover', e => e.preventDefault());
-            document.body.addEventListener('drop', e => e.preventDefault());
-
-            // Redraw watermark on window resize (keeps canvas crisp)
-            window.addEventListener('resize', () => {
-                if (!originalImage) return;
-                const previousControlsHidden = controlsPanel.classList.contains('hidden');
-                setupCanvas();
-                updateWatermark();
-                if (previousControlsHidden) controlsPanel.classList.add('hidden');
-            });
-        }
-        
-        function updateValueDisplays() {
-            if (valueDisplays.fontSize) valueDisplays.fontSize.textContent = controls.fontSize.value + 'px';
-            if (valueDisplays.opacity) valueDisplays.opacity.textContent = controls.opacity.value + '%';
-            if (valueDisplays.angle) valueDisplays.angle.textContent = controls.angle.value + '°';
-            if (valueDisplays.spacing) valueDisplays.spacing.textContent = controls.spacing.value + 'px';
-            
-            console.log('Value displays updated:', {
-                fontSize: controls.fontSize.value,
-                opacity: controls.opacity.value,
-                angle: controls.angle.value,
-                spacing: controls.spacing.value
-            });
-        }
-        
-        // File handling
-        function handleFileSelect(e) {
+        // Event Listeners
+        fileInput.addEventListener('change', e => {
             const file = e.target.files[0];
             if (file) processFile(file);
-        }
+        });
         
-        function handleDragOver(e) {
-            e.preventDefault();
-            if (!isProcessing) uploadZone.classList.add('dragover');
-        }
-        
-        function handleDragLeave(e) {
-            if (!uploadZone.contains(e.relatedTarget)) {
-                uploadZone.classList.remove('dragover');
+        uploadZone.addEventListener('click', () => {
+            if (!uploadZone.classList.contains('replaced')) {
+                fileInput.click();
             }
-        }
+        });
         
-        function handleDrop(e) {
+        uploadZone.addEventListener('dragover', e => {
             e.preventDefault();
-            uploadZone.classList.remove('dragover');
-            if (isProcessing) return;
-            
-            const files = e.dataTransfer.files;
-            if (files.length > 0) processFile(files[0]);
-        }
+            uploadZone.style.borderColor = 'var(--primary)';
+        });
         
+        uploadZone.addEventListener('dragleave', () => {
+            uploadZone.style.borderColor = 'var(--gray-300)';
+        });
+        
+        uploadZone.addEventListener('drop', e => {
+            e.preventDefault();
+            uploadZone.style.borderColor = 'var(--gray-300)';
+            const file = e.dataTransfer.files[0];
+            if (file) processFile(file);
+        });
+        
+        Object.values(controls).forEach(control => {
+            control.addEventListener('input', () => {
+                updateValueDisplays();
+                debounceWatermark();
+            });
+        });
+        
+        downloadBtn.addEventListener('click', downloadImage);
+        removeBtn.addEventListener('click', resetTool);
+        
+        // Functions
         function processFile(file) {
-            try {
-                validateFile(file);
-                
-                isProcessing = true;
-                hideMessages();
-                
-                const reader = new FileReader();
-                reader.onload = handleImageLoad;
-                reader.onerror = () => {
-                    showMessage('Failed to read file', 'error');
-                    resetProcessing();
-                };
-                
-                reader.readAsDataURL(file);
-                
-            } catch (error) {
-                showMessage(error.message, 'error');
-                resetProcessing();
+            if (!ALLOWED_TYPES.includes(file.type)) {
+                alert('Please upload a valid image file (JPG, PNG, WebP, or GIF)');
+                return;
             }
-        }
-        
-        function validateFile(file) {
-            if (!file) throw new Error('No file selected');
-            if (file.size > MAX_FILE_SIZE) throw new Error('File too large (max 10MB)');
-            if (!ALLOWED_TYPES.includes(file.type)) throw new Error('Invalid file type');
-        }
-        
-        function handleImageLoad(e) {
-            const img = new Image();
-            img.onload = () => {
-                try {
-                    console.log('Image loaded:', img.width, 'x', img.height);
-                    
-                    if (img.width > MAX_CANVAS_SIZE || img.height > MAX_CANVAS_SIZE) {
-                        throw new Error('Image too large');
-                    }
-                    
-                    originalImage = img;
-                    console.log('Original image set, replacing upload with preview...');
-                    
-                    replaceUploadWithPreview();
-                    setupCanvas();
-                    updateWatermark();
-                    showControls();
-                    showMessage('Image loaded successfully! Customize your watermark below.', 'success');
-                    
-                } catch (error) {
-                    console.error('Error in handleImageLoad:', error);
-                    showMessage(error.message, 'error');
-                } finally {
-                    resetProcessing();
-                }
-            };
-            
-            img.onerror = (error) => {
-                console.error('Image load error:', error);
-                showMessage('Invalid image file', 'error');
-                resetProcessing();
-            };
-            
-            console.log('Loading image from data URL...');
-            img.src = e.target.result;
-        }
-        
-        function resetProcessing() {
-            isProcessing = false;
-        }
-        
-        function setupCanvas() {
-            if (!originalImage) {
-                console.error('No original image for canvas setup');
+            if (file.size > MAX_FILE_SIZE) {
+                alert('File too large. Maximum size is 10MB');
                 return;
             }
             
-            // Calculate display scale to fit preview area
-            const imgAspect = originalImage.width / originalImage.height;
-            const previewAspect = PREVIEW_MAX_WIDTH / PREVIEW_MAX_HEIGHT;
+            const reader = new FileReader();
+            reader.onload = e => {
+                const img = new Image();
+                img.onload = () => {
+                    originalImage = img;
+                    setupCanvas();
+                    updateWatermark();
+                    showControls();
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+        
+        function setupCanvas() {
+            const maxWidth = 600;
+            const maxHeight = 400;
+            let width = originalImage.width;
+            let height = originalImage.height;
             
-            let displayWidth, displayHeight;
-            if (imgAspect > previewAspect) {
-                // Image is wider - fit to width
-                displayWidth = PREVIEW_MAX_WIDTH;
-                displayHeight = PREVIEW_MAX_WIDTH / imgAspect;
-            } else {
-                // Image is taller - fit to height
-                displayHeight = PREVIEW_MAX_HEIGHT;
-                displayWidth = PREVIEW_MAX_HEIGHT * imgAspect;
+            if (width > maxWidth || height > maxHeight) {
+                const ratio = Math.min(maxWidth / width, maxHeight / height);
+                width *= ratio;
+                height *= ratio;
             }
             
-            // Calculate scale factor
-            displayScale = displayWidth / originalImage.width;
+            canvas.width = width;
+            canvas.height = height;
             
-            // Set canvas to original size for high quality
-            canvas.width = originalImage.width;
-            canvas.height = originalImage.height;
-            
-            // Set canvas display size for preview
-            canvas.style.width = displayWidth + 'px';
-            canvas.style.height = displayHeight + 'px';
-            canvas.style.display = 'block';
-            
-            // Ensure canvas wrapper is visible
+            uploadContent.classList.add('hidden');
             canvasWrapper.classList.remove('hidden');
-            
-            console.log(`Canvas setup: Original ${originalImage.width}x${originalImage.height}, Display ${displayWidth}x${displayHeight}, Scale: ${displayScale}`);
+            removeBtn.classList.remove('hidden');
+            downloadBtn.classList.remove('hidden');
+            uploadZone.classList.add('replaced');
         }
         
         function showControls() {
             controlsPanel.classList.remove('hidden');
-            // Smooth scroll to work area
-            uploadZone.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            
-            // Force initial watermark update to ensure it's visible
-            setTimeout(() => {
-                console.log('Force watermark update when showing controls');
-                updateWatermark();
-            }, 200);
-        }
-
-        function replaceUploadWithPreview() {
-            console.log('Replacing upload with preview...');
-            
-            // Switch styles and show canvas + download button
-            uploadZone.classList.add('replaced');
-            uploadZone.setAttribute('role', 'region');
-            uploadZone.removeAttribute('tabindex');
-            
-            if (uploadContent) {
-                uploadContent.classList.add('hidden');
-                console.log('Upload content hidden');
-            }
-            
-            canvasWrapper.classList.remove('hidden');
-            removeImageBtn.classList.remove('hidden');
-            downloadBtn.classList.remove('hidden');
-            downloadBtn.disabled = false;
-            
-            console.log('Canvas wrapper visible, download enabled');
-            
-            // Force a repaint
-            setTimeout(() => {
-                if (canvas && originalImage) {
-                    console.log('Force updating watermark after DOM change');
-                    updateWatermark();
-                }
-            }, 50);
-        }
-        
-        function resetToUploadState() {
-            // Clear the original image
-            originalImage = null;
-            
-            // Reset upload zone
-            uploadZone.classList.remove('replaced');
-            uploadZone.setAttribute('tabindex', '0');
-            uploadZone.setAttribute('role', 'button');
-            
-            // Show upload content, hide canvas and buttons
-            if (uploadContent) {
-                uploadContent.classList.remove('hidden');
-            }
-            canvasWrapper.classList.add('hidden');
-            removeImageBtn.classList.add('hidden');
-            downloadBtn.classList.add('hidden');
-            downloadBtn.disabled = true;
-            
-            // Hide controls
-            controlsPanel.classList.add('hidden');
-            
-            // Clear file input
-            fileInput.value = '';
-            
-            // Clear canvas
-            if (canvas && ctx) {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-            }
-            
-            // Hide any messages
-            hideMessages();
-            
-            console.log('Reset to upload state');
-        }
-        
-        // Watermark processing
-        function debounceWatermark() {
-            console.log('debounceWatermark called');
-            clearTimeout(watermarkTimeout);
-            watermarkTimeout = setTimeout(() => {
-                console.log('Executing debounced watermark update');
-                updateWatermark();
-            }, 100);
+            controlsPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
         
         function updateWatermark() {
-            if (!originalImage || isProcessing || !canvas || !ctx) {
-                console.log('updateWatermark: missing requirements', {
-                    originalImage: !!originalImage,
-                    isProcessing,
-                    canvas: !!canvas,
-                    ctx: !!ctx
-                });
-                return;
-            }
+            if (!originalImage) return;
             
-            try {
-                // Ensure canvas is properly sized
-                if (canvas.width === 0 || canvas.height === 0) {
-                    console.log('Canvas has zero dimensions, setting up...');
-                    setupCanvas();
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(originalImage, 0, 0, canvas.width, canvas.height);
+            
+            const text = controls.watermarkText.value.trim() || '© PROTECTED';
+            const size = parseInt(controls.fontSize.value);
+            const opacity = parseInt(controls.opacity.value) / 100;
+            const angle = parseInt(controls.angle.value) * Math.PI / 180;
+            const color = controls.color.value;
+            const spacing = parseInt(controls.spacing.value);
+            
+            ctx.font = `bold ${size}px sans-serif`;
+            ctx.fillStyle = color;
+            ctx.globalAlpha = opacity;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            const textWidth = ctx.measureText(text).width;
+            
+            for (let x = -textWidth; x < canvas.width + textWidth; x += spacing) {
+                for (let y = -size; y < canvas.height + size; y += spacing) {
+                    ctx.save();
+                    ctx.translate(x, y);
+                    ctx.rotate(angle);
+                    ctx.fillText(text, 0, 0);
+                    ctx.restore();
                 }
-                
-                console.log('Drawing image to canvas:', canvas.width, 'x', canvas.height);
-                
-                // Clear and redraw original image
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.drawImage(originalImage, 0, 0, canvas.width, canvas.height);
-                
-                // Get values
-                const text = controls.watermarkText.value.trim() || '© PROTECTED';
-                const size = Math.max(10, parseInt(controls.fontSize.value) || 24);
-                const opacity = Math.max(0.1, Math.min(1, (parseInt(controls.opacity.value) || 30) / 100));
-                const angle = (parseInt(controls.angle.value) || -15) * Math.PI / 180;
-                const color = controls.color.value || '#ffffff';
-                const spacing = Math.max(50, parseInt(controls.spacing.value) || 120);
-                
-                // Apply watermark
-                ctx.font = `bold ${size}px system-ui, -apple-system, sans-serif`;
-                ctx.fillStyle = color;
-                ctx.globalAlpha = opacity;
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'middle';
-                
-                const textMetrics = ctx.measureText(text);
-                const textWidth = textMetrics.width;
-                const textHeight = size;
-                
-                // Create repeating pattern
-                ctx.save();
-                for (let x = -textWidth; x < canvas.width + textWidth; x += spacing) {
-                    for (let y = -textHeight; y < canvas.height + textHeight; y += spacing) {
-                        ctx.save();
-                        ctx.translate(x, y);
-                        ctx.rotate(angle);
-                        ctx.fillText(text, 0, 0);
-                        ctx.restore();
-                    }
-                }
-                ctx.restore();
-                ctx.globalAlpha = 1;
-                
-            } catch (error) {
-                console.error('Watermark error:', error);
-                showMessage('Error applying watermark: ' + error.message, 'error');
             }
+            ctx.globalAlpha = 1;
+        }
+        
+        function debounceWatermark() {
+            clearTimeout(watermarkTimeout);
+            watermarkTimeout = setTimeout(updateWatermark, 100);
+        }
+        
+        function updateValueDisplays() {
+            document.getElementById('fontSizeValue').textContent = controls.fontSize.value + 'px';
+            document.getElementById('opacityValue').textContent = controls.opacity.value + '%';
+            document.getElementById('angleValue').textContent = controls.angle.value + '°';
+            document.getElementById('spacingValue').textContent = controls.spacing.value + 'px';
         }
         
         function downloadImage() {
-            try {
-                canvas.toBlob((blob) => {
-                    if (!blob) {
-                        showMessage('Failed to generate image', 'error');
-                        return;
-                    }
-                    
-                    const link = document.createElement('a');
-                    link.download = `wirdmark-protected-${Date.now()}.png`;
-                    link.href = URL.createObjectURL(blob);
-                    
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                    
-                    setTimeout(() => URL.revokeObjectURL(link.href), 100);
-                    showMessage('Protected image downloaded successfully!', 'success');
-                    
-                }, 'image/png', 0.95);
-                
-            } catch (error) {
-                console.error('Download error:', error);
-                showMessage('Download failed', 'error');
-            }
+            canvas.toBlob(blob => {
+                const link = document.createElement('a');
+                link.download = `wirdmark-protected-${Date.now()}.png`;
+                link.href = URL.createObjectURL(blob);
+                link.click();
+                URL.revokeObjectURL(link.href);
+            }, 'image/png', 0.95);
         }
         
-        // Messages
-        function showMessage(message, type = 'error') {
-            hideMessages();
-            const element = type === 'error' ? errorMessage : successMessage;
-            element.textContent = message;
-            element.classList.remove('hidden');
+        function resetTool() {
+            originalImage = null;
+            fileInput.value = '';
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
             
-            setTimeout(() => element.classList.add('hidden'), 5000);
+            uploadContent.classList.remove('hidden');
+            canvasWrapper.classList.add('hidden');
+            removeBtn.classList.add('hidden');
+            downloadBtn.classList.add('hidden');
+            controlsPanel.classList.add('hidden');
+            uploadZone.classList.remove('replaced');
         }
         
-        // Initialize the application
-        function init() {
-            setupEventListeners();
-            updateValueDisplays();
+        // Initialize value displays
+        updateValueDisplays();
+        
+        // Collapsible sections
+        function toggleSection(header) {
+            const arrow = header.querySelector('.collapsible-arrow');
+            const content = header.nextElementSibling;
             
-            // Debug: Check if controls are found
-            console.log('Controls found:', {
-                watermarkText: !!controls.watermarkText,
-                fontSize: !!controls.fontSize,
-                opacity: !!controls.opacity,
-                angle: !!controls.angle,
-                color: !!controls.color,
-                spacing: !!controls.spacing
-            });
+            arrow.classList.toggle('active');
+            content.classList.toggle('active');
         }
         
+        // FAQ toggle
+        function toggleFAQ(question) {
+            question.classList.toggle('active');
+            const answer = question.nextElementSibling;
+            answer.classList.toggle('active');
+        }
+        
+        // Initialize AdSense (if you have a real publisher ID)
+        // Replace ca-pub-XXXXXXXXXX with your actual AdSense publisher ID
+        if (window.adsbygoogle && ADSENSE_PUBLISHER_ID !== 'ca-pub-XXXXXXXXXX') {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        }
     </script>
 </body>
 </html>
